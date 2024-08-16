@@ -1,0 +1,8 @@
+from nginx:latest
+
+copy index.html /user/share/nginx/html/
+
+expose 80
+
+cmd ["nginx", "daemon off;"]
+
